@@ -1,4 +1,4 @@
-#Bootstrap med custom SASS
+# Bootstrap med custom SASS
 
 - [x] Få Gulp til at oprette et sourcemap til din egen Bootstrap CSS
 - [x] Få Gulp til at minify'e din egen Bootstrap CSS
