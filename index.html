@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="card">
+        <div class="card-header">
+            SASS
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Bootstrap projekt - SASS</h5>
+            <p class="card-text">Bootstrap projekt lavet med SASS, også kendetegnet scss.</p>
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bg-info" href="#">Bootstrap</a>
+                    <a class="dropdown-item bg-info" href="#">SASS</a>
+                    <a class="dropdown-item bg-info" href="#">Gulp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body mt-3 mb-3">
+            <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum.
+                Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc
+                posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis
+                iudicium purus sit amet fermentum.</p>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Tryk her for ligegyldig viden
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Lorem Ipsum</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været
+                            standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at
+                            trykke en bog til sammenligning af forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem
+                            århundreder, men har også vundet indpas i elektronisk typografi uden væsentlige ændringer. Sætningen
+                            blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum,
+                            og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container plugin">
+    <!-- Container der indrammer det content og container den skal indeholde. Samtidig er det den der arbejdes på i jQuery -->
+    <div class="tabsContainer">
+        <div class="tabs"> <!-- Tabellerne der kan ses som faner. De skal være der for der kan arbejdes med tabscontent -->
+            <a href="#tab1">Rosa Mundi</a> <!-- <a href="#xxx" for at kunnne sammensætte det med ID under tabscontent, ellers kan de ikke samarbejde -->
+            <a href="#tab2">Blush Noisette</a>
+            <a href="#tab3">Jomfru Marias blomst</a>
+            <a href="#tab4">Rose de Rescht</a>
+        </div>
+
+        <div class="tabsContent"> <!-- Content der skal være indholdet inder fanerne oppe under tabs -->
+            <div id="tab1">
+                Rosa Mundi har flere gange givet rosenentusiaster rynker i panden.
+                <br/><br/>
+                De særprægede, bolsjestribede blomster er en udfordring for øjet, men på besnærende vis vinder rosen
+                alligevel beskuerens hjerte. Rosa Mundi er en stribet variant af apotekerrosen Rosa gallica offi cinalis.
+                Det sker, at der på en enkelt gren kommer ensfarvede apotekerroseblomster. Plant Rosa Mundi et sted,
+                hvor den får masser af sol. Rosen blomstrer i juni og juli.
+            </div>
+            <div id="tab2">
+                Blush Noisette er en yndig historisk rose. De hvide-sartrosa blomster er ret små og pryder rosen til
+                langt ud på efteråret. I kolde vintre kan rosen fryse noget tilbage, men den kommer stærkt igen. Selvom
+                rosen er mere beskeden i sin fremtoning end de kraftigt voksende klatreroser, kan Blush Noisette bruges
+                som slyngrose. Den hører til de historiske roser, som genblomstrer. Rosen blomstrer fra slutningen af
+                juni til langt hen på efteråret.
+            </div>
+            <div id="tab3">
+                Den gamle, franske rose Mme Legras de St. Germain er hårdfør og trives i både fuld sol og halvskygge.
+                Duften er stærk, og Mme Legras de St. Germain ser fantastisk ud, uanset om den dyrkes på espalier eller
+                bruges som fritvoksende busk. På billeder bærer Jomfru Maria ofte en uskyldsren, hvid albarose, og
+                derfor kaldes albaroserne også for jomfruroser.
+            </div>
+            <div id="tab4">
+                Roser fra damascena bifera-gruppen nævnes i dokumenter fra antikken som de to gange blomstrende, men det
+                nøjes Rose de Rescht ikke med - den blomstrer til langt ud på efteråret. I Orienten er rosen blevet brugt
+                til fremstilling af rosenolie, men rosens kraftige duft og intense farve kan fastholdes på flere måder.
+                Brug den til gelé og i roseneddike, lav en velduftende rosengranité, eller lav de tørrede blade til
+                potpourri. Rosen blomstrer fra juli.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="js/tabsPlugin.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.tabsContainer').tabsPlugin({
+
+            setup: {
+                aktivTab: 1,
+                showVisuel: 1,
+                bgColor: '#d182a4'
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+$theme-colors: (
+        "primary": #897,
+        "secondary": #769,
+        "info": #FFF9
+);
+
+$body-bg: #f6f7ea;
+
+$modal-header-border-color: #d4d6de;
+
+.plugin {
+  margin: 50px 300px;
+  font-family: 'Roboto Slab', serif;
+
+  a:link , a:active, a:visited {
+    color: white;
+  }
+
+  .tabs {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    a {
+      -webkit-flex-basis: 100%;
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+
+  .tabs {
+    text-align: center;
+  }
+
+  .tabsContent {
+    overflow: hidden;
+    overflow-y: auto;
+    line-height: 1.4;
+  }
+
+  .tabsContent div {
+    display: none;
+  }
+
+  .tabsVisuel .tabsContent {
+    background-color: #e0e8cf;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    background-clip: padding-box;
+  }
+
+  .tabsVisuel .tabs {
+    background-clip: padding-box;
+
+    a {
+      background-color: #e39dbe;
+      border-radius: 10px 10px 0 0;
+      display: block;
+      padding: 15px 0;
+      text-decoration: none;
+    }
+  }
+
+}
+
+
+
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
